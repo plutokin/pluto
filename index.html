@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>all eyes on pluto</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+            font-family: monospace;
+            background: #000;
+            color: #fa8eaf;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+        }
+
+        a {
+            color: #fa8eaf;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 18px;
+            font-size: 0.60rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>all eyes on pluto!</h1>
+
+    <nav>
+        <a href="https:www.soundcloud.com/plutokin">soundcloud</a>
+    </nav>
+</header>
+
+<footer>
+    more to look at soon, made very quickly but with <3
+</footer>
+
+<script>
+    const titles = ["all eyes on pluto", "all eyes on pluto.", "all eyes on pluto..", "all eyes on pluto..."];
+    let i = 0;
+
+    setInterval(() => {
+        document.title = titles[i];
+        i = (i + 1) % titles.length;
+    }, 1000);
+</script>
+
+</body>
+</html>
